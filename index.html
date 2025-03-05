@@ -5,7 +5,7 @@
     </head>
     <body>
         <div id="main">
-            <h3 id='labelText'>This is my first widget.</h3>
+            <h3 id='labelText4'>This is my first widget.</h3>
             <span id="labelText"></span>
             <input type="text" id="userInput">
         </div>
@@ -14,7 +14,7 @@
             //inside callback function , it is the best practice while developing widgets
             JFCustomWidget.subscribe("ready", function(){
                 var label = JFCustomWidget.getWidgetSetting('QuestionLabel');
-                document.getElementById('labelText').innerHTML = label;
+                document.getElementById('labelText4').innerHTML = label;
                 //subscribe to form submit event
                 JFCustomWidget.subscribe("submit", function(){
                     var msg = {
